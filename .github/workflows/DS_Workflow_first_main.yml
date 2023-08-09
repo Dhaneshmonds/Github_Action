@@ -4,6 +4,10 @@ name: Dhanesh Sample CI
 run-name:  Deployed to Dev by @${{ github.actor }}
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
+
+workflow_dispatch:
+ run: echo 'Manual Build'
+
 on:
   push:
     branches: [ main ]
